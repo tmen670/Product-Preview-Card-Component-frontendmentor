@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2EAE2;
+}
+
+main {
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.perfume-img {
+    width: 300px;
+    height: 100%;
+    border-radius: 8px 0 0 8px;
+}
+
+.right {
+    width: 300px;
+}
+
+.info {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    letter-spacing: 5px;
+    font-weight: 500;
+    color: #6C7289;
+    margin-bottom: 20px;
+}
+
+.title {
+    color: #1C232B;
+    font-family: "Fraunces", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 24px;
+}
+
+.description {
+    color: #6C7289;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 500;
+    margin-bottom: 29px;
+}
+
+.price {
+    color: #3D8168;
+    font-family: "Fraunces", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin-right: 19px;
+}
+
+.discount {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    text-decoration: line-through;
+    color: #6C7289;
+}
+
+.pricing {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.add-to-cart {
+    color: white;
+    background-color: #3D8168;
+    border: none;
+    padding: 15px 62px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.add-to-cart:hover {
+    background-color: #1A4032;
+}
+
+.add-to-cart:active {
+    opacity: 0.75;
+}
+
+.cart-icon {
+    padding-right: 12px;
+}
+
+.perfume-img-mobile {
+    display: none;
+}
+
+@media (max-width: 650px) {
+
+    main {
+        flex-direction: column;
+        margin-bottom: 28px;
+        width: 90%;
+        margin-top: 28px;
+        align-items: center;
+    }
+
+    .perfume-img {
+        display: none;
+    }
+
+    .perfume-img-mobile {
+        display: inline-block;
+        width: 100%;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .right {
+        margin-top: 24px;
+        width: 100%;
+    }
+
+    .info {
+        padding: 0 24px 24px 24px;
+        width: 100%;
+    }
+
+    .top-title {
+        margin-bottom: 12px;
+    }
+
+    .title {
+        margin-bottom: 16px;
+    }
+
+    .description {
+        margin-bottom: 24px;
+    }
+
+    .pricing {
+        margin-bottom: 20px;
+    }
+
+    .add-to-cart {
+        justify-content: center;
+    }
+
+
+
+}
